@@ -1,0 +1,5 @@
+{
+    "proxy" : "http://proxy1.bj.petrochina:8080",
+    "https-proxy" : "http://proxy1.bj.petrochina:8080",
+    "directory": "client/bower_components"
+}

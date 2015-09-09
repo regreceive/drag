@@ -1,0 +1,61 @@
+div(ng-include='"components/navbar/navbar.html"')
+
+header#banner.hero-unit
+  .container
+    h1 'Allo, 'Allo!
+    p.lead Kick-start your next web app with Angular Fullstack
+    img(src='assets/images/yeoman.png', alt='I\'m Yeoman')
+
+.container
+  form.thing-form
+    p.input-group
+      input.form-control(type='text', placeholder='Add a new thing here.', ng-model='newThing')
+      span.input-group-btn
+        button.btn.btn-primary(type='submit', ng-click='addThing()') Search
+
+  .row
+    .panel.panel-default
+      .panel-heading
+        | Views
+        span.glyphicon.glyphicon-cog.pull-right.setting
+      .panel-body(xp-drop)
+        .col-md-2.col-lg-2.col-sm-3(ng-repeat='thing in awesomeThings')
+          .thumbnail
+            img(src='assets/images/shortcut_gis.png')
+            .caption
+              h6 GIS呼叫业务
+
+.rollover
+  .panel.panel-primary
+    .panel-heading
+      | Widgets
+    .panel-body(xp-drag)
+      .col-md-6
+        .thumbnail
+          img(src='assets/images/shortcut_gis.png')
+          .caption
+            h6 GIS呼叫业务
+      .col-md-6
+        .thumbnail
+          img(src='assets/images/shortcut_web.png')
+          .caption
+            h6 GIS呼叫业务
+      .col-md-6
+        .thumbnail
+          img(src='assets/images/shortcut_storage.png')
+          .caption
+            h6 GIS呼叫业务
+      .col-md-6
+        .thumbnail
+          img(src='assets/images/shortcut_file.png')
+          .caption
+            h6 GIS呼叫业务
+
+footer.footer
+  .container
+    p
+      | Angular Fullstack v2.1.1
+      = ' | '
+      a(href='https://twitter.com/tyhenkel') @tyhenkel
+      = ' | '
+      a(href='https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open') Issues
