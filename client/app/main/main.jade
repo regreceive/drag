@@ -18,8 +18,8 @@ header#banner.hero-unit
       .panel-heading
         | Views
         span.glyphicon.glyphicon-cog.pull-right.setting
-      .panel-body(xp-drop)
-        .col-md-2.col-lg-2.col-sm-3(ng-repeat='thing in awesomeThings')
+      .panel-body.xp-dragdrop(xp-drop)
+        .col-md-2(ng-repeat='thing in awesomeThings')
           .thumbnail
             img(src='assets/images/shortcut_gis.png')
             .caption
@@ -29,7 +29,7 @@ header#banner.hero-unit
   .panel.panel-primary
     .panel-heading
       | Widgets
-    .panel-body(xp-drag)
+    .panel-body.xp-dragdrop(xp-drag)
       .col-md-6
         .thumbnail
           img(src='assets/images/shortcut_gis.png')

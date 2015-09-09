@@ -37,6 +37,18 @@
   cursor: pointer;
 }
 
+.xp-dragdrop {
+  position: relative;
+  > .sortable-placeholder {
+    > .thumbnail {
+      border: 1px dashed #9e0505;
+      > * {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
 .rollover {
   position: fixed;
   top: 412px;
@@ -45,8 +57,5 @@
   z-index: 2;
   [xp-drag] {
     max-height: 250px;
-    .ui-state-highlight {
-      height: 100px;
-    }
   }
 }
